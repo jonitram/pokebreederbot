@@ -26,7 +26,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
 
 ## Setting up the Arduino
 
-- Disclaimer: These instructions were written in the context of an Arduino with an atmega16u2 chip
+- Disclaimer: These instructions were written for Mac OSX in the context of an Arduino with an atmega16u2 chip
 
 ### Dependencies and Compiling
 
