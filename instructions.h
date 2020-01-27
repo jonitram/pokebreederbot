@@ -157,10 +157,5 @@ static const command_t next_round_steps[] = {
 };
 
 static const uint16_t breeding_duration = 3550; // tune based on number of steps
-// does not work for dreepy -
-// 3000 1750 2750 2250 2000 2150 2600
-// if 3500 does not work try 3550
-
-// STARTED AT 7:17
 
 #endif

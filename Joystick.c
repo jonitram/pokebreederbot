@@ -294,51 +294,13 @@ void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
 
 		case FLY_TO_NURSERY:
 			do_steps(fly_to_breading_steps, ARRAY_SIZE(fly_to_breading_steps), ReportData, APPROACH_NPC, 0);
-			// take_action(fly_to_breading_steps[bufindex], ReportData);
-			// duration_count ++;
-			
-			// if (duration_count > fly_to_breading_steps[bufindex].duration)
-			// {
-			// 	bufindex ++;
-			// 	duration_count = 0;
-			// }
-
-			// if (bufindex > (int)(sizeof(fly_to_breading_steps) / sizeof(fly_to_breading_steps[0])) - 1) 
-			// {
-			// 	bufindex = 0;
-			// 	duration_count = 0;
-
-			// 	state = APPROACH_NPC;
-
-			// 	reset_report(ReportData);
-			// }
 			break;
 
 		case APPROACH_NPC:
 			do_steps(get_egg_steps, ARRAY_SIZE(get_egg_steps), ReportData, PICK_SWAP_SLOT, 0);
-			// take_action(get_egg_steps[bufindex], ReportData);
-			// duration_count ++;
-			
-			// if (duration_count > get_egg_steps[bufindex].duration)
-			// {
-			// 	bufindex ++;
-			// 	duration_count = 0;
-			// }
-
-			// if (bufindex > (int)(sizeof(get_egg_steps) / sizeof(get_egg_steps[0])) - 1) 
-			// {
-			// 	bufindex = 0;
-			// 	duration_count = 0;
-
-			// 	state = PICK_SWAP_SLOT;
-
-			// 	reset_report(ReportData);
-			// }
-		
 			break;
 	
 		case PICK_SWAP_SLOT:
-			// do_steps(swap_slot[swap_slot_number], swap_slot_size[swap_slot_number], ReportData, SWAP_POKEMON, 1);
 			take_action(swap_slot[swap_slot_number][bufindex].action, ReportData);
 			duration_count ++;
 			
@@ -360,46 +322,8 @@ void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
 			}
 			break;
 
-			// take_action(swap_slot_3[bufindex], ReportData);
-			// duration_count ++;
-			
-			// if (duration_count > swap_slot_3[bufindex].duration)
-			// {
-			// 	bufindex ++;
-			// 	duration_count = 0;
-			// }
-
-			// if (bufindex > (int)(sizeof(swap_slot_3) / 
-			//                      sizeof(swap_slot_3[0])) - 1) 
-			// {
-			// 	bufindex = 0;
-			// 	duration_count = 0;
-			// 	swap_slot_number = (swap_slot_number + 1) % 5;
-
-			// 	state = SWAP_POKEMON;
-			// }
-			// break;
-
 		case SWAP_POKEMON:
 			do_steps(swap_pokemon_steps, ARRAY_SIZE(swap_pokemon_steps), ReportData, BREEDING_PREP, 0);
-			// take_action(swap_pokemon_steps[bufindex], ReportData);
-			// duration_count ++;
-
-			// if (duration_count > swap_pokemon_steps[bufindex].duration)
-			// {
-			// 	bufindex ++;
-			// 	duration_count = 0;
-			// }
-
-			// if (bufindex > (int)(sizeof(swap_pokemon_steps) / sizeof(swap_pokemon_steps[0])) - 1) 
-			// {
-			// 	bufindex = 0;
-			// 	duration_count = 0;
-
-			// 	state = BREEDING_PREP;
-
-			// 	reset_report(ReportData);
-			// }
 			break;
 
 		case BREEDING_PREP:
