@@ -35,42 +35,42 @@ typedef struct {
 } command_t;
 
 static const command_t wake_up_hang[] = {
-    { hang,  150 }
+    { hang, 50 }
 };
 
 static const command_t fly_to_breading_steps[] = {
-    { hang, 50 },
+    { hang, 10 },
     { press_a, 5 },
-    { hang, 50 },
+    { hang, 10 },
     { press_x, 7},
+    { hang, 40 },
+    { press_a, 5 },
+    { hang, 30 },
+    { press_a, 5 },
+    { hang, 30 },
+    { press_a, 5 },
+    { hang, 30 },
+    { press_a, 5 },
+    { hang, 30 },
+    { press_a, 5 },
     { hang, 70 },
-    { press_a, 5 },
-    { hang, 50 },
-    { press_a, 5 },
-    { hang, 50 },
-    { press_a, 5 },
-    { hang, 50 },
-    { press_a, 5 },
-    { hang, 50 },
-    { press_a, 5 },
-    { hang, 50 },
     { press_a, 5 }
 };
 
 static const command_t get_egg_steps[] = {
-    { move_backward, 70 }, // need to tune
+    { move_backward, 70 },
     {reset_view_angle, 5 },
     { move_right, 10 },
     { press_a, 5 },
     { hang, 20 },
     { press_a, 5 },
     { hang, 20 },
-    { move_backward, 5 },
-    { hang, 20 },
-    { move_backward, 5 },
-    { hang, 20 },
+    // { move_backward, 5 }, // in the case where there is no egg
+    // { hang, 20 }, // however this shouldn't be possible
+    // { move_backward, 5 },
+    // { hang, 20 },
     { press_a, 5 },
-    { hang, 70 },
+    { hang, 60 },
     { press_a, 5 },
     { hang, 5 },
     { move_right, 25 },
@@ -85,35 +85,35 @@ static const command_t get_egg_steps[] = {
 
 static command_t swap_slot_2[] = {
     { move_backward, 5 }, 
-    { hang, 30 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_3[] = {
     { move_backward, 5 }, 
-    { hang, 30 }, 
+    { hang, 10 }, 
     { move_backward, 5 },
-    { hang, 30 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_4[] = {
     { move_backward, 5 }, 
-    { hang, 30 }, 
+    { hang, 10 }, 
     { move_backward, 5 }, 
-    { hang, 30 }, 
+    { hang, 10 }, 
     { move_backward, 5 }, 
-    { hang, 30 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_5[] = {
     { move_forward, 5 }, 
-    { hang, 30 }, 
+    { hang, 10 }, 
     { move_forward, 5 }, 
-    { hang, 30 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_6[] = {
     { move_forward, 5 },
-    { hang, 30 }
+    { hang, 10 }
 };
 
 static const command_t* swap_slot[] = {
@@ -130,15 +130,15 @@ static const uint8_t swap_slot_size[] = {
 
 static const command_t swap_pokemon_steps[] = {
     { press_a, 10 },
-    { hang, 100 },
+    { hang, 50 },
     { press_b, 10 },
-    { hang, 100 },
+    { hang, 50 },
     { press_b, 10 },
-    { hang, 100 },
+    { hang, 30 },
     { press_b, 10 },
-    { hang, 70 },
+    { hang, 30 },
     { press_b, 10 },
-    { hang, 70 }
+    { hang, 10 }
 };
 
 static const command_t breeding_prep_steps[] = {
@@ -151,11 +151,16 @@ static const command_t breeding_prep_steps[] = {
 };
 
 static const command_t next_round_steps[] = {
-    { hang, 20 },
+    { hang, 5 },
     { press_plus, 5 },
-    { hang, 20 }
+    { hang, 5 }
 };
 
-static const uint16_t breeding_duration = 3000;
+static const uint16_t breeding_duration = 3550; // tune based on number of steps
+// does not work for dreepy -
+// 3000 1750 2750 2250 2000 2150 2600
+// if 3500 does not work try 3550
+
+// STARTED AT 7:17
 
 #endif
