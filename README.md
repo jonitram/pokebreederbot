@@ -22,7 +22,13 @@ As long as the in-game preconditions are met before plugging in the device, plug
 
 | Breeding Duration | Pokemon   | Cycles    | Steps | Cycling Time  |
 | ----------------- | --------- | --------- | ----- | ------------- |
-| 3500              | Dreepy    | 40        | 10k   | 1:23          |
+| 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
+
+- To use the `steps2breedingduration.py` script type:
+
+    `./steps2breedingduration.py <number of steps to hatch the egg>`
+
+Where the `number of steps to hatch the egg` is the value taken from this [link](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_Egg_cycles) in the far right column of the species of pokemon you are trying to hatch
 
 ## Setting up the Arduino
 
