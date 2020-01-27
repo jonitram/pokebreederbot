@@ -74,4 +74,4 @@ Where the `number of steps to hatch the egg` is the value taken from this [link]
 
     `dfu-programmer: no device present.`
 
-but your Arduino is plugged in and the lights are on then you most likely need to put the Arduino into DFU mode by bridging its reset and ground pins
+    but your Arduino is plugged in and the lights are on then you most likely need to put the Arduino into DFU mode by bridging its reset and ground pins
