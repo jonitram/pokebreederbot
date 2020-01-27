@@ -69,3 +69,9 @@ Where the `number of steps to hatch the egg` is the value taken from this [link]
     `sudo dfu-programmer atmega16u2 flash <.hex file>`
 
     `sudo dfu-programmer atmega16u2 reset`
+
+- If you receive this error:
+
+    `dfu-programmer: no device present.`
+
+but your Arduino is plugged in and the lights are on then you most likely need to put the Arduino into DFU mode by bridging its reset and ground pins
