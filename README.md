@@ -2,9 +2,9 @@
 
 As long as the in-game preconditions are met before plugging in the device, plugging the Arduino directly into the switch through a USB Type B to USB Type C Cable should enable the bot to start picking up and hatching eggs automatically without any user input
 
-## In-Game Information:
+## In-Game Information
 
-### Preconditions:
+### Preconditions
 
 - You are not on your bike
 - You are currently at the Nursery in the Wild Area
@@ -18,7 +18,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
     - Vertical Camera Control: Regular
 - It's recommended to direct your box to a series of empty boxes before beginning the automatic breeding process
 
-### Breeding Duration Values:
+### Breeding Duration Values
 
 | Breeding Duration | Pokemon   | Cycles    | Steps | Cycling Time  |
 | ----------------- | --------- | --------- | ----- | ------------- |
