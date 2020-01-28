@@ -293,7 +293,7 @@ void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
 			break;
 
 		case FLY_TO_NURSERY:
-			do_steps(fly_to_breading_steps, ARRAY_SIZE(fly_to_breading_steps), ReportData, APPROACH_NPC, 0);
+			do_steps(fly_to_breeding_steps, ARRAY_SIZE(fly_to_breeding_steps), ReportData, APPROACH_NPC, 0);
 			break;
 
 		case APPROACH_NPC:

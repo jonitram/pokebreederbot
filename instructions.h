@@ -38,7 +38,7 @@ static const command_t wake_up_hang[] = {
     { hang, 50 }
 };
 
-static const command_t fly_to_breading_steps[] = {
+static const command_t fly_to_breeding_steps[] = {
     { hang, 10 },
     { press_a, 5 },
     { hang, 10 },
