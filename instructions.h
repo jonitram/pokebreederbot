@@ -143,7 +143,7 @@ static const command_t swap_pokemon_steps[] = {
 
 static const command_t breeding_prep_steps[] = {
     { move_backward, 30 },
-    { hang, 10 },
+    { hang, 5 },
     { move_left, 80 },
     { hang, 5 },
     { press_plus, 5 },
