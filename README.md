@@ -29,6 +29,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
     `./steps2breedingduration.py <number of steps to hatch the egg>`
 
     Where the `number of steps to hatch the egg` is the value taken from this [link](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_Egg_cycles) in the far right column of the species of pokemon you are trying to hatch
+- Then change the `breeding_duration` variable at the bottom of `instructions.h` to match the value given as a result of running the `steps2breedingduration.py` script before making and flashing `Joystick.hex` to the Arduino
 
 ## Setting up the Arduino
 
