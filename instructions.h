@@ -59,7 +59,7 @@ static const command_t fly_to_breeding_steps[] = {
 
 static const command_t get_egg_steps[] = {
     { move_backward, 70 },
-    {reset_view_angle, 5 },
+    { reset_view_angle, 5 },
     { move_right, 5 },
     { press_a, 5 },
     { hang, 20 },
@@ -144,7 +144,7 @@ static const command_t swap_pokemon_steps[] = {
 static const command_t breeding_prep_steps[] = {
     { move_backward, 30 },
     { hang, 5 },
-    { move_left, 80 },
+    { move_left, 85 },
     { hang, 5 },
     { press_plus, 5 },
     { hang, 5 },
