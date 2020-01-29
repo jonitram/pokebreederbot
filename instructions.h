@@ -85,30 +85,30 @@ static const command_t get_egg_steps[] = {
 
 static command_t swap_slot_2[] = {
     { move_backward, 5 }, 
-    { hang, 15 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_3[] = {
     { move_backward, 5 }, 
-    { hang, 15 }, 
+    { hang, 10 }, 
     { move_backward, 5 },
-    { hang, 15 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_4[] = {
     { move_backward, 5 }, 
-    { hang, 15 }, 
+    { hang, 10 }, 
     { move_backward, 5 }, 
-    { hang, 15 }, 
+    { hang, 10 }, 
     { move_backward, 5 }, 
-    { hang, 15 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_5[] = {
     { move_forward, 5 }, 
-    { hang, 15 }, 
+    { hang, 10 }, 
     { move_forward, 5 }, 
-    { hang, 15 }
+    { hang, 10 }
 };
 
 static command_t swap_slot_6[] = {
