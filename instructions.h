@@ -60,6 +60,7 @@ static const command_t fly_to_breeding_steps[] = {
 static const command_t get_egg_steps[] = {
     { move_backward, 70 },
     { reset_view_angle, 5 },
+    { hang, 5 },
     { move_right, 5 },
     { press_a, 5 },
     { hang, 20 },
