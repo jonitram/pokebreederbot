@@ -60,7 +60,7 @@ static const command_t fly_to_breeding_steps[] = {
 static const command_t get_egg_steps[] = {
     { move_backward, 70 },
     {reset_view_angle, 5 },
-    { move_right, 10 },
+    { move_right, 5 },
     { press_a, 5 },
     { hang, 20 },
     { press_a, 5 },
@@ -85,30 +85,30 @@ static const command_t get_egg_steps[] = {
 
 static command_t swap_slot_2[] = {
     { move_backward, 5 }, 
-    { hang, 10 }
+    { hang, 15 }
 };
 
 static command_t swap_slot_3[] = {
     { move_backward, 5 }, 
-    { hang, 10 }, 
+    { hang, 15 }, 
     { move_backward, 5 },
-    { hang, 10 }
+    { hang, 15 }
 };
 
 static command_t swap_slot_4[] = {
     { move_backward, 5 }, 
-    { hang, 10 }, 
+    { hang, 15 }, 
     { move_backward, 5 }, 
-    { hang, 10 }, 
+    { hang, 15 }, 
     { move_backward, 5 }, 
-    { hang, 10 }
+    { hang, 15 }
 };
 
 static command_t swap_slot_5[] = {
     { move_forward, 5 }, 
-    { hang, 10 }, 
+    { hang, 15 }, 
     { move_forward, 5 }, 
-    { hang, 10 }
+    { hang, 15 }
 };
 
 static command_t swap_slot_6[] = {
