@@ -35,7 +35,7 @@ typedef struct {
 } command_t;
 
 static const command_t wake_up_hang[] = {
-    { hang, 50 }
+    { hang, 100 }
 };
 
 static const command_t fly_to_breeding_steps[] = {
