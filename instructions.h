@@ -66,10 +66,6 @@ static const command_t get_egg_steps[] = {
     { hang, 20 },
     { press_a, 5 },
     { hang, 20 },
-    // { move_backward, 5 }, // in the case where there is no new egg to pickup
-    // { hang, 20 }, // however this shouldn't be possible
-    // { move_backward, 5 },
-    // { hang, 20 },
     { press_a, 5 },
     { hang, 40 },
     { press_a, 5 },
@@ -157,6 +153,6 @@ static const command_t next_round_steps[] = {
     { hang, 5 }
 };
 
-static const uint16_t breeding_duration = 3550; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
+static const uint16_t breeding_duration = 2700; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
 
 #endif
