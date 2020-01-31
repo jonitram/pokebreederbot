@@ -153,6 +153,7 @@ static const command_t next_round_steps[] = {
     { hang, 5 }
 };
 
-static const uint16_t breeding_duration = 2700; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
+static const uint16_t breeding_duration = 2600; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
+// don't change this to 2300 or less or risk the bot running rampant on your save
 
 #endif
