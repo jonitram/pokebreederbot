@@ -25,7 +25,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
 | 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
 | 2400 (57 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
 
- * *These values are with a flame body lead*
+ * **These values are with a flame body lead**
 
 - To use the `steps2breedingduration.py` script type:
 
