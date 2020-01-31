@@ -333,8 +333,8 @@ void GetNextReport(USB_JoystickReport_Input_t* const ReportData) {
 		case BREEDING:
 			take_action(circle_around, ReportData);
 			duration_count ++;
-			
-			if (duration_count % 100 >= 0 && duration_count % 100 <= 5) {
+			// spam a five times once a second
+			if (duration_count % 50 >= 0 && duration_count % 50 < 5) {
 				take_action(press_a, ReportData);
 			}
 			
