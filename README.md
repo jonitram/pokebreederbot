@@ -23,6 +23,9 @@ As long as the in-game preconditions are met before plugging in the device, plug
 | Breeding Duration | Pokemon   | Cycles    | Steps | Cycling Time  |
 | ----------------- | --------- | --------- | ----- | ------------- |
 | 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
+| 2400 (57 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
+
+* These values are with a flame body lead *
 
 - To use the `steps2breedingduration.py` script type:
 
@@ -30,7 +33,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
 
     Where the `number of steps to hatch the egg` is the value taken from this [link](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_Egg_cycles) in the far right column of the species of pokemon you are trying to hatch
 - Change the `breeding_duration` variable at the bottom of `instructions.h` to match the value given as a result of running the `steps2breedingduration.py` script before making and flashing `Joystick.hex` to the Arduino
-- Do not change the value of `breeding_duration` to 2300 or less because there is a chance that when the bot talks to the nursery worker she will not have an egg waiting for you and the behavior will become unpredictable
+- Do not change the value of `breeding_duration` to less than 2400 because there is a chance that when the bot talks to the nursery worker she will not have an egg waiting for you and the behavior will become unpredictable
 
 ## Setting up the Arduino
 
