@@ -39,78 +39,89 @@ static const command_t wake_up_hang[] = {
 };
 
 static const command_t fly_to_breeding_steps[] = {
+    // need to tune timings
     { hang, 10 },
     { press_a, 5 },
     { hang, 10 },
     { press_x, 7},
-    { hang, 20 },
+    { hang, 25 },
     { press_a, 5 },
-    { hang, 20 },
+    { hang, 85 },
     { press_a, 5 },
-    { hang, 30 },
-    { press_a, 5 },
-    { hang, 30 },
-    { press_a, 5 },
-    { hang, 30 },
+    { hang, 40 },
     { press_a, 5 },
     { hang, 70 },
-    { press_a, 5 }
 };
 
 static const command_t get_egg_steps[] = {
+    { hang, 10 },
+    // need to tune movement
     { move_backward, 70 },
     { reset_view_angle, 5 },
     { hang, 5 },
     { move_right, 5 },
+
+    // a spam in case no egg, take total of as and hangs as hang if egg
+    { press_a, 5 },
+    { hang, 30 },
     { press_a, 5 },
     { hang, 20 },
+    // move down twice in case no egg
+    { move_backward, 5 },
+    { hang, 5 },
+    { move_backward, 5 },
+    { hang, 5 },
+
     { press_a, 5 },
-    { hang, 20 },
+    // this bottom hang a little long
+    { hang, 130 },
     { press_a, 5 },
+    // move left if no egg would have left dialogue if thats the case
+    // take total as hang if egg
+    { hang, 30 },
+    { move_left, 10 },
     { hang, 40 },
     { press_a, 5 },
-    { hang, 5 },
-    { move_right, 25 },
-    { hang, 60 },
+    { hang, 50 },
     { press_a, 5 },
     { hang, 70 },
-    { press_a, 5 },
-    { hang, 70 },
-    { press_a, 5 },
-    { hang, 70 },
+    // { press_a, 5 },
+    // { hang, 70 },
+    // { press_a, 5 },
+    // { hang, 70 },
 };
 
 static command_t swap_slot_2[] = {
     { move_backward, 5 }, 
-    { hang, 10 }
+    { hang, 5 }
 };
 
 static command_t swap_slot_3[] = {
     { move_backward, 5 }, 
-    { hang, 10 }, 
+    { hang, 5 }, 
     { move_backward, 5 },
-    { hang, 10 }
+    { hang, 5 }
 };
 
 static command_t swap_slot_4[] = {
     { move_backward, 5 }, 
-    { hang, 10 }, 
+    { hang, 5 }, 
     { move_backward, 5 }, 
-    { hang, 10 }, 
+    { hang, 5 }, 
     { move_backward, 5 }, 
-    { hang, 10 }
+    { hang, 5 }
 };
 
 static command_t swap_slot_5[] = {
     { move_forward, 5 }, 
-    { hang, 10 }, 
+    { hang, 5 }, 
     { move_forward, 5 }, 
-    { hang, 10 }
+    { hang, 5 }
 };
 
 static command_t swap_slot_6[] = {
     { move_forward, 5 },
-    { hang, 10 }
+    { hang, 5 }
 };
 
 static const command_t* swap_slot[] = {
@@ -126,6 +137,7 @@ static const uint8_t swap_slot_size[] = {
 };
 
 static const command_t swap_pokemon_steps[] = {
+    // need to tune these
     { press_a, 10 },
     { hang, 50 },
     { press_b, 10 },
@@ -139,9 +151,9 @@ static const command_t swap_pokemon_steps[] = {
 };
 
 static const command_t breeding_prep_steps[] = {
-    { move_backward, 30 },
+    { move_backward, 35 },
     { hang, 5 },
-    { move_left, 85 },
+    { move_left, 90 },
     { hang, 5 },
     { press_plus, 5 },
     { hang, 5 },
@@ -153,7 +165,6 @@ static const command_t next_round_steps[] = {
     { hang, 5 }
 };
 
-static const uint16_t breeding_duration = 2400; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
-// don't change this to less than 2400 or risk the bot running rampant on your save
+static const uint16_t breeding_duration = 2250; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
 
 #endif
