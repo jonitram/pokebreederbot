@@ -11,6 +11,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
 - There is an egg waiting for you at the Nursery
 - Ensure that when you hit "X" the cursor is on the "Town Map" icon
 - Your party is full of non-egg pokemon (The first pokemon will never be swapped out so it can be a flame body pokemon)
+- None of the pokemon in your party are holding any items except for the first one (the first one is allowed to hold an item)
 - In-Game Options:
     - Text Speed: Fast
     - Send to Boxes: Manual
