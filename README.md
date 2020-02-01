@@ -23,7 +23,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
 | Breeding Duration | Pokemon   | Cycles    | Steps | Cycling Time  |
 | ----------------- | --------- | --------- | ----- | ------------- |
 | 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
-| 2400 (57 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
+| 2250 (53 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
 
  * **These values are with a flame body lead**
 
