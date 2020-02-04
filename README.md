@@ -11,7 +11,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
 - There is an egg waiting for you at the Nursery
 - Ensure that when you hit "X" the cursor is on the "Town Map" icon
 - Your party is full of non-egg pokemon (The first pokemon will never be swapped out so it can be a flame body pokemon)
-- None of the pokemon in your party are holding any items except for the first one (the first one is allowed to hold an item)
+- None of the pokemon in your party are holding any items (except the first one, since it is never going to be swapped out it is allowed to hold an item)
 - In-Game Options:
     - Text Speed: Fast
     - Send to Boxes: Manual
@@ -21,19 +21,18 @@ As long as the in-game preconditions are met before plugging in the device, plug
 
 ### Breeding Duration Values
 
+- Disclaimer: All of the breeding duration information including the `steps2breedingduration.py` script assume a party lead with flame body. If you do not use a flame body lead, then double the values
+
 | Breeding Duration | Pokemon   | Cycles    | Steps | Cycling Time  |
 | ----------------- | --------- | --------- | ----- | ------------- |
-| 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
 | 2250 (53 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
-
- * **These values are with a flame body lead**
+| 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
 
 - To use the `steps2breedingduration.py` script type:
 
     `./steps2breedingduration.py <number of steps to hatch the egg>`
 
     Where the `number of steps to hatch the egg` is the value taken from this [link](https://bulbapedia.bulbagarden.net/wiki/List_of_Pok%C3%A9mon_by_base_Egg_cycles) in the far right column of the species of pokemon you are trying to hatch
-- *The script assumes a flame body lead. If you are not using a flame body lead, double the value given
 - Change the `breeding_duration` variable at the bottom of `instructions.h` to match the value given as a result of running the `steps2breedingduration.py` script before making and flashing `Joystick.hex` to the Arduino
 
 ## Setting up the Arduino
@@ -81,3 +80,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
     `dfu-programmer: no device present.`
 
     but your Arduino is plugged in and the lights are on then you most likely need to put the Arduino into DFU mode by bridging its reset and ground pins
+
+### Additional Resources
+
+- You can also use the automatic pokemon releasing bot [here](https://github.com/jonitram/clearboxesbot) for clearing your boxes of hatched eggs after you have finished hatching pokemon
