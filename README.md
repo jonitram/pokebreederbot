@@ -23,10 +23,10 @@ As long as the in-game preconditions are met before plugging in the device, plug
 
 - Disclaimer: All of the breeding duration information including the `steps2breedingduration.py` script assume a party lead with flame body. If you do not use a flame body lead, then double the values
 
-| Breeding Duration | Pokemon   | Cycles    | Steps | Cycling Time  |
-| ----------------- | --------- | --------- | ----- | ------------- |
-| 2250 (53 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
-| 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
+    | Breeding Duration | Pokemon   | Cycles    | Steps | Cycling Time  |
+    | ----------------- | --------- | --------- | ----- | ------------- |
+    | 2250 (53 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
+    | 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
 
 - To use the `steps2breedingduration.py` script type:
 
