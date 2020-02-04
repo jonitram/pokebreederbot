@@ -73,8 +73,8 @@ static const command_t get_egg_steps[] = {
     { hang, 5 },
 
     { press_a, 5 },
-    // this bottom hang a little long
-    { hang, 130 },
+    // could maybe lower this hang a tad
+    { hang, 100 },
     { press_a, 5 },
     // move left if no egg would have left dialogue if thats the case
     // take total as hang if egg
