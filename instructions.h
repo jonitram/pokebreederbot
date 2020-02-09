@@ -7,6 +7,8 @@
     #define ARRAY_SIZE(x) (sizeof((x)) / sizeof((x)[0]))
 #endif
 
+static const uint16_t breeding_duration = 2150; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
+
 typedef enum {
     circle_around,
     get_on_bike,
@@ -165,6 +167,5 @@ static const command_t next_round_steps[] = {
     { hang, 5 }
 };
 
-static const uint16_t breeding_duration = 2250; // CHANGE THIS VALUE DEPENDING ON SCRIPT RESULTS
 
 #endif
