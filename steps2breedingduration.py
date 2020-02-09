@@ -62,4 +62,7 @@ for bikingtime in range(int(eggtime / 5), eggtime):
         # add 2 seconds for a small buffer window
         result = timedurationratio * (bikingtime + 2)
         print("Use this for the breeding duration: " + str(result))
-        break
+        exit(0)
+        
+print("No functional breeding duration for a step count this low. Try doubling the step count and try again.")
+
