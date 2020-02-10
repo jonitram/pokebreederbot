@@ -1,6 +1,6 @@
 # Poke Breeder Bot
 
-As long as the in-game preconditions are met before plugging in the device, plugging the Arduino directly into the switch through a USB Type B to USB Type C Cable should enable the bot to start picking up and hatching eggs automatically without any user input
+As long as the in-game preconditions are met before plugging in the device, plugging the Arduino directly into the Switch through a USB Type B to USB Type C cable should enable the bot to start picking up and hatching eggs automatically without any user input
 
 ## In-Game Information
 
