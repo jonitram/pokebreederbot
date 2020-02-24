@@ -60,7 +60,7 @@ for bikingtime in range(int(eggtime / 5), eggtime):
     else:
         timedurationratio = int(3500 / 83)
         # add 1 second for a small buffer window
-        result = timedurationratio * (bikingtime + 1)
+        result = timedurationratio * (bikingtime + 2)
         print("Use this for the breeding duration: " + str(result))
         exit(0)
         
