@@ -27,9 +27,10 @@ As long as the in-game preconditions are met before plugging in the device, plug
     | ----------------- | --------- | --------- | ----- | ------------- |
     | 2150 (51 seconds) | Togepi    | 10        | 2.5k  | 29 seconds    |
     | 1850 (44 seconds) | Litten    | 15        | 3.8k  | 50 seconds    |
-    | 2250 (53 seconds) | Darumaka  | 20        | 5k    | 62 seconds    |
+    | 2250 (53 seconds) | Darumaka  | 20        | 5.1k    | 62 seconds    |
+    | 2550 (60 seconds) | Duskull   | 25        | 6.4k  | 77 seconds    |
     | 2900 (69 seconds) | Duraludon | 30        | 7.6k  | 93 seconds    |
-    | 3500 (83 seconds) | Dreepy    | 40        | 10k   | 123 seconds   |
+    | 3500 (83 seconds) | Dreepy    | 40        | 10.2k | 123 seconds   |
 
 - To use the `steps2breedingduration.py` script type:
 
