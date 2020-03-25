@@ -8,6 +8,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
 
 - You are not on your bike
 - You are currently at the Nursery in the Wild Area
+- The current weather does not have falling particles (ie. falling rain from raining / snow from snowing / etc). If the weather does have falling particles, change the date to a day that the Wild Area Nursery does not have falling particles. *DISCLAIMER* More testing needs to be done on which weathers break the bot. YMMV - The bot may work on some weathers with falling particles.
 - There is an egg waiting for you at the Nursery
 - Ensure that when you hit "X" the cursor is on the "Town Map" icon
 - Your party is full of non-egg pokemon (The first pokemon will never be swapped out so it can be a flame body pokemon)
@@ -27,7 +28,7 @@ As long as the in-game preconditions are met before plugging in the device, plug
     | ----------------- | --------- | --------- | ----- | ------------- |
     | 2150 (51 seconds) | Togepi    | 10        | 2.5k  | 29 seconds    |
     | 1850 (44 seconds) | Litten    | 15        | 3.8k  | 50 seconds    |
-    | 2250 (53 seconds) | Darumaka  | 20        | 5.1k    | 62 seconds    |
+    | 2250 (53 seconds) | Darumaka  | 20        | 5.1k  | 62 seconds    |
     | 2550 (60 seconds) | Duskull   | 25        | 6.4k  | 77 seconds    |
     | 2900 (69 seconds) | Duraludon | 30        | 7.6k  | 93 seconds    |
     | 3500 (83 seconds) | Dreepy    | 40        | 10.2k | 123 seconds   |
